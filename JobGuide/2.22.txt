@@ -27,3 +27,20 @@ https://geonlee.tistory.com/171
 
 Android iOS 구분 없이 개발하기 -> React Native, Flutter 활용
 
+프론트엔드 개발이 처리하는 부분이 점점 광범위해짐
+ ->( ex) 페이지 스크롤 위치를 계산해서 미리 숙소 더 보기 이미지를 서버에 요청)
+      ex) 마우스를 올리면 간단한 팝업 애니메이션으로 미리 불러온 정보를 표시)
+
+로그인, 회원가입을 처리하는 방식은 세션이나 쿠키 등 다양한 방법이 있음
+
+언어 / 웹 프레임워크
+
+ Java / Spring
+ Python / Django
+ Javascript / Express
+ PHP / Laravel
+ ----백엔드
+
+ React.js, Vue.js, Angular.js, Svelte
+ ----프론트엔드
+
