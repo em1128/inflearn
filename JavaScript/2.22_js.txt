@@ -1,2 +1,5 @@
 크롬에서
- ->우클릭->요소검사->console
+ ->우클릭->요소검사->Elements
+		->console
+SublimeText
+
