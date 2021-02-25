@@ -1,0 +1,48 @@
+동등연산자
+
+undefined와 null
+둘 다 값이 없다라는 뜻인 건 같지만,
+null은 프로그래머가 의도적으로 없앤 것이라 엄격하게는 다르다.
+그래서
+null == undefined // 는 true지만
+null === undefined // 는 false다.
+
+true와 false
+동등연산자(==)에서 true는 1로 간주, false는 그 외 나머지 숫자.
+
+하지만 true === 1 //는 false
+1을 '1'로 하여 문자로 해도
+true == '1' //는 true지만
+true === '1' //는 false
+
+0 === -0 // true다.(0은 부호 상관없이 같다.)
+
+NaN는 0/0을 의미(계산할 수 없음)
+
+NaN === NaN // false다.(아예 계산이 안돼서 비교 불가능)
+
+
+!==는 ===의 부정
+
+prompt('당신의 나이는?','성실하게 답변해주세요');
+
+
+javascript에서 false로 간주되는 데이터형
+1. ''//빈 문자열
+2. undefined//undefined
+3. a//값이 할당되지 않은 변수
+4. null//null
+5. NaN//NaN
+
+
+반복문
+영어로 loop, iterate
+
+
+javascript에선 문자열과 숫자 변수가 연산을 하면, 자동으로 변수를 문자열로 전환시킴
+ex) 'Hello' + i + 'guys' // i는 문자열로 전환됨
+
+크롬 개발자도구로 디버깅할 때 Watch Expressions에 변수명을 입력하면
+해당 변수의 값을 실시간으로 볼 수 있다.
+
+
