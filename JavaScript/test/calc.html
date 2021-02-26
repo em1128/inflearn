@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		function add( arg1,  arg2)
+		{
+			var res = Number(arg1) + Number(arg2);
+			document.write("덧셈 결과 : " + res);
+			return res;
+		}
+		function minus( arg1,  arg2)
+		{
+			var res = Number(arg1) - Number(arg2);
+			document.write("뺄셈 결과 : " + res);
+			return res;
+		}
+		function multiple( arg1,  arg2)
+		{
+			var res = Number(arg1) * Number(arg2);
+			document.write("곱셈 결과 : " + res);
+			return res;
+		}
+		function divide( arg1,  arg2)
+		{
+			var res = Number(arg1) / Number(arg2);
+			document.write("나눗셈 결과 : " + res);
+			return res;
+		}
+		var sel=0;
+		
+	
+		sel = prompt('1:덧셈 2:뺄셈 3:곱셈 4:나눗셈','1~4를 입력해주십시오.');
+		if(sel==1){
+			add(prompt("첫번째 숫자"),prompt("두번째 숫자"));
+		
+		}
+		else if(sel==2){
+			minus(prompt("첫번째 숫자"),prompt("두번째 숫자"));
+		}
+		else if(sel==3){
+		
+			multiple(prompt("첫번째 숫자"),prompt("두번째 숫자"));
+		}
+		else if(sel==4){
+		
+			divide(prompt("첫번째 숫자"),prompt("두번째 숫자"));
+		}
+		else{
+			alert('계산방법을 잘못 선택하셨습니다.');
+			document.write('계산불가');
+		}
+			
+		
+	</script>
+
+</body>
+</html>

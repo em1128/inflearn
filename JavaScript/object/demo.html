@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<ul>
+		<li>starlite</li>
+		<li>irika</li>
+		<li>lowspace</li>
+
+	</ul>
+	<ul>
+	<script type="text/javascript">
+		var grades = new Object();
+		grades['em1128'] = 10;
+		grades['railhearts'] = 6;
+		grades['elpicsid'] = 80;
+
+		document.write(grades.em1128);
+		document.write(grades.railhearts);
+		document.write(grades.elpicsid);
+
+		alert(grades['em11'+'28']);
+		for(key in grades){
+			document.write("<li>key : "+key+" value : "+grades[key]+"</li>");
+		}	
+		
+	</script>
+	</ul>
+</body>
+</html>
