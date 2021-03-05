@@ -5,6 +5,7 @@
 </head>
 <body>
 	<script type="text/javascript">
+
 		const add = ( arg1,  arg2) => arg1 + arg2;
 
 		const substract =( arg1,  arg2) => arg1 - arg2;
@@ -13,38 +14,49 @@
 
 		const divide =( arg1,  arg2) => arg1 / arg2;
 
+		const remainder = (arg1, arg2) => arg1 % arg2;
+
 		var sel=0;
 		
 	
-		sel = prompt('1:덧셈 2:뺄셈 3:곱셈 4:나눗셈','1~4를 입력해주십시오.');
-		if(sel==1){
-			var res = add(prompt("첫번째 숫자"),prompt("두번째 숫자"));
-			document.write("덧셈 결과 : " + res);
-
-		
-		}
-		else if(sel==2){
-			var res = substract(prompt("첫번째 숫자"),prompt("두번째 숫자"));
-			document.write("뺄셈 결과 : " + res);
-
-		}
-		else if(sel==3){
-		
-			var res = multiply(prompt("첫번째 숫자"),prompt("두번째 숫자"));
-			document.write("곱셈 결과 : " + res);
-
-		}
-		else if(sel==4){
-		
-			var res = divide(prompt("첫번째 숫자"),prompt("두번째 숫자"));
-			document.write("나눗셈 결과 : " + res);
-
+		sel = prompt('1:덧셈 2:뺄셈 3:곱셈 4:나눗셈 5:나머지','1~5를 입력해주십시오.');
+		if(sel!=1 && sel!=2 && sel!=3 && sel!=4 && sel!= 5){
+		 	alert('계산방법을 잘못 선택하셨습니다.');
 		}
 		else{
-			alert('계산방법을 잘못 선택하셨습니다.');
-			document.write('계산불가');
-		}
+			var a = Number(prompt("첫번째 숫자"));
+			var b = Number(prompt("두번째 숫자"));
+
+			if(sel==1){
 			
+				document.write("덧셈 결과 : " + add(a,b));
+
+			
+			}
+			else if(sel==2){
+				
+				document.write("뺄셈 결과 : " + substract(a,b));
+
+			}
+			else if(sel==3){
+			
+				
+				document.write("곱셈 결과 : " + multiply(a,b));
+
+			}
+			else if(sel==4){
+			
+				
+				document.write("나눗셈 결과 : " +  divide(a,b));
+
+			}
+			else if(sel==5){
+		
+				document.write("나머지 결과 : " + remainder(a,b));
+
+
+			}
+		}	
 		
 	</script>
 
