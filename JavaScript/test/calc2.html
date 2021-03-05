@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		const add = ( arg1,  arg2) => arg1 + arg2;
+
+		const substract =( arg1,  arg2) => arg1 - arg2;
+
+		const multiply =( arg1,  arg2) => arg1 * arg2;
+
+		const divide =( arg1,  arg2) => arg1 / arg2;
+
+		var sel=0;
+		
+	
+		sel = prompt('1:덧셈 2:뺄셈 3:곱셈 4:나눗셈','1~4를 입력해주십시오.');
+		if(sel==1){
+			var res = add(prompt("첫번째 숫자"),prompt("두번째 숫자"));
+			document.write("덧셈 결과 : " + res);
+
+		
+		}
+		else if(sel==2){
+			var res = substract(prompt("첫번째 숫자"),prompt("두번째 숫자"));
+			document.write("뺄셈 결과 : " + res);
+
+		}
+		else if(sel==3){
+		
+			var res = multiply(prompt("첫번째 숫자"),prompt("두번째 숫자"));
+			document.write("곱셈 결과 : " + res);
+
+		}
+		else if(sel==4){
+		
+			var res = divide(prompt("첫번째 숫자"),prompt("두번째 숫자"));
+			document.write("나눗셈 결과 : " + res);
+
+		}
+		else{
+			alert('계산방법을 잘못 선택하셨습니다.');
+			document.write('계산불가');
+		}
+			
+		
+	</script>
+
+</body>
+</html>

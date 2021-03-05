@@ -1,0 +1,58 @@
+<함수>
+
+ES6부터 추가된 여러가지 기능
+
+1. Default parameters
+
+function showMessage(message, from = 'unknown') {
+	console.log('${message} by ${form}');
+}
+
+from에 값이 전달되지 않을 때 unknown으로 출력
+
+2. Rest parameters
+
+function printAll(...args) {
+	for(let i = 0; i < args.length; i++) {
+		console.log(args[i]);
+	}
+}
+
++@
+
+for(const arg of args) {
+	console.log(arg);
+}
+
+args.forEach((arg) => console.log(arg));
+
+모두 동일
+
+실전 팁
+-early return, early exit
+
+코드 블럭 안에 대량의 코드가 있으면 가독성이 떨어지기 때문에
+
+function upgradeUser(user) {
+	if(user.point <= 10 ) {
+		return;
+	}
+}
+이런식으로 조건이 맞을 때 실행하는 것보다
+조건이 안맞을때 종료시키는 것이 더 좋다.
+
+-Function expression
+
+const print =function () { // anonymous function
+	console.log('print');
+};
+
+print(); // print
+const printAgain = print;
+printAgain(); // print
+
+First-class function
+함수는 변수로 할당이 되고
+파라미터로 전달이 되고
+리턴값으로도 사용가능함
+(변수와 거의 비슷한 성질을 지님)

@@ -1,0 +1,15 @@
+hoist : 함수 선언 이전에 호출가능(자바스크립트가 선언을 제일 위로 올려주기 때문)
+
+콜백함수 : 함수 2개 중에서 상황이 맞으면 1개의 함수를 부르라고
+	전달하는 것을 콜백함수라고 함
+
+함수에 이름을 적는 것이 1.디버깅할 때 stack trace에 좋음
+		       2. 재귀함수를 쓸 때 필요(recursion)
+
+IIFE : Immediately Invoked Function Expression
+
+(function hello() {
+	console.log('IIFE');
+})();
+함수를 선언하고 바로 호출함
+

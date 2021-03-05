@@ -1,0 +1,27 @@
+jsbin.com
+간단하게 HTML 써보는 사이트
+
+html태그 레퍼런스나 튜토리얼 확인할 때 mdn사이트 좋음
+https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbDlzcmIxMVpxa2xHdUlkQUR2NEN1TkRTUndMd3xBQ3Jtc0tubkJFaGpiWWJBUXBHTy1VWFlvNXRaNllQM1ByanRhSjRSZTY2QXZpVWNjWnFoUjgwSTlFRk1Bc29SaEliY01TdEx5YWxjV3gwTW4wZDktUV9tZkJHcXZubzd4V2J6Q18xMDcwczh1R25ObWFqemxwcw&q=https%3A%2F%2Fdeveloper.mozilla.org%2Fen-US%2Fdocs%2FLearn%2FHTML%2FIntroduction_to_HTML%2FDocument_and_website_structure
+
+symbol은 자바스크립트의 고유한 데이터형
+
+json형식으로 객체를 바꿀 때는 함수는 사라지니까 주의
+그리고 json을 stringify로 불러오면 string형식이 되기 때문에
+Date등 다른 형식에서 사용되는 .getDate등은 사용할 수 없음
+ >> 따라서 이런 형식이 있다면 reviver콜백함수(parse에 있음)를 이용해서 형식을
+      유지시켜야함
+    ex) return key === 'birthDate' ? new Date(value) : value;
+
+json diff사이트를 이용하면
+타입이 바뀌는 변수를 확인할 수 있음
+
+json beautifier사이트는
+간혹 json변환시 망가지는 포맷을 고쳐줌(들여쓰기 안되거나 줄바꿈 안되거나..)
+
+json parser사이트는
+object형태로 어떤 구성요소들이 있는지 한 눈에 볼 수 있음
+
+json validator사이트는
+json파일에 문제가 없는지 확인할 수 있음
+

@@ -42,7 +42,7 @@ javascript에서 false로 간주되는 데이터형
 javascript에선 문자열과 숫자 변수가 연산을 하면, 자동으로 변수를 문자열로 전환시킴
 ex) 'Hello' + i + 'guys' // i는 문자열로 전환됨
 
-크롬 개발자도구로 디버깅할 때 Watch Expressions에 변수명을 입력하면
+크롬 개발자도구로 디버깅할 때 Sources > Watch Expressions에 변수명을 입력하면
 해당 변수의 값을 실시간으로 볼 수 있다.
 
 
