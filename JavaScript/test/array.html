@@ -6,7 +6,7 @@
 <body>
 <script type="text/javascript">
 
-{
+
 	//Q1. make a string out of an array
 	const fruits = ['apple', 'banana', 'orange'];
 
@@ -31,9 +31,9 @@
 	// 정답
 	const result = fruits.join('and');
 	console.log(result);
-}
 
-{
+
+
 	//Q2. make an array out of a string
 	const fruits2 = 'apple, kiwi, banana, cherry';
 	var pattern = /(\w+)/g;
@@ -54,9 +54,8 @@
 	// 정답
 	const result = fruits2.split(','); // .split(',',2);로 하면 앞의 2개(apple, kiwi)만 가져옴
 	console.log(result);
-}
 
-{
+
 	//Q3. make this array look like this: [5, 4, 3, 2, 1]
 	const array3 = [1, 2, 3, 4, 5];
 
@@ -66,9 +65,9 @@
 	{
 		alert(array3[i]);
 	}
-}
 
-{
+
+
 	//Q4. make new array without the first two elements
 	const array4 = [1, 2, 3, 4, 5];
 
@@ -84,8 +83,8 @@
 	// 정답은 아니지만 const result = array4.splice(0,2);로 result에 [1,2] array에 [3,4,5]를 남길 수 있음
 	const result = array4.slice(2,5);//5는 제외됨. 즉 인덱스 [2],[3],[4] 부분
 	console.log(result);
-}
-{
+
+
 	class Student {
 	  	constructor(name, age, enrolled, score) {
 	    this.name = name;
@@ -106,7 +105,7 @@
 
 		//5번부터는 쭉 정답
 
-	{
+	
 		// Q5. find a student with the score 90
 
 		const result = students.find(function(student){
@@ -118,23 +117,23 @@
 		로 해도 같음
 		*/
 		console.log(result);
-	}
+	
 
-	{
+	
 		// Q6. make an array of enrolled students
 
 		const result = students.filter((student) => student.enrolled);
 		console.log(result);
-	}
+	
 
-	{
+	
 		// Q7. make an array containing only the students' scores
 		// result should be: [45, 80, 90, 66, 88]
 		const result = students.map((student) => student.score);
 		console.log();
-	}
+	
 
-	{
+	
 		// Q8. check if there is a student with the score lower than 50
 		const result = students.some((student) => student.score < 50); // 적어도 1개
 		console.log(result);
@@ -142,9 +141,9 @@
 		const result2 = !students.every((student) => student.score < 50); // !모든
 		console.log(result2);
 			
-	}
+	
 
-	{
+	
 		// Q9. compute students' average score
 		const result = students.reduce((prev, curr) => { // reduceRight을 쓰면 역순으로 돎
 			console.log('--------');
@@ -156,9 +155,9 @@
 		const result = students.reduce((prev.curr) => prev + curr.score, 0);
 		*/
 		console.log(result / students.length);
-	}
+	
 
-	{
+	
 		// Q10. make a string containing all the scores
 		// result should be: '45, 80, 90, 66, 88'
 		const result = students
@@ -166,9 +165,9 @@
 		//.filter(score => score >= 50) 50점 이상인 학생만 출력
 		.join();
 		console.log(result);
-	}
+	
 
-	{
+	
 		// Bonus! do Q10 sorted in ascending order
 		// result should be: '45, 66, 80, 88, 90'
 		const result = students.map((student) => student.score)
@@ -177,8 +176,7 @@
 		console.log(result);
 		
 
-	}
-}
+	
 </script>
 </body>
 </html>

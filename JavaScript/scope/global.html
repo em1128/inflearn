@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		
+		(function (){
+			var MYAPP = {}
+			MYAPP.calculator = {
+				'left' : null,
+				'right' : null 
+			}
+			MYAPP.coordinate ={
+				'left' : null,
+				'right' : null
+			}
+			MYAPP.calculator.left = 10;
+			MYAPP.calculator.right = 20;
+			const sum=() => MYAPP.calculator.left + MYAPP.calculator.right;
+			
+			document.write(sum());
+
+
+		}())//익명함수 전역변수를 줄이기 위해 사용(함수도 변수이기 때문)
+	</script>
+</body>
+</html>
