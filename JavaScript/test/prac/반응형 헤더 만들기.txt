@@ -1,0 +1,41 @@
+css 연결
+
+nav태그에 navbar _logo _menu _icons 클래스 만들기
+
+font awesome 에서 헤드에 kit code 복사
+
+폰트 적용은 태그를 복사해서 사용
+
+커맨드 팔렛에서 라이브서버로 Open하면 적용되는 걸 실시간으로 확인할 수 있음
+
+css에서 스타일링
+flex박스 활용
+
+align-items
+background-color
+
+margin을 0으로 해야 정렬이 제대로 됨
+
+padding으로 간격조정
+
+font-size로 로고, 글씨크기 조정
+color는 미리 변수로 선언해두고 var()로 사용
+
+폰트는 Google Fonts에서 source sans pro 사용
+링크에 복사 붙여넣기
+font-family
+
+메뉴에 마우스가 hover되면 하이라이트 주기
+border-radius로 둥글게 만들기
+
+레이아웃을 반응형으로 만들 때는 media쿼리 사용 768px기준
+
+html 레이아웃 구조
+<header>
+<menu><body>
+<footer>
+
+커맨드팔렛 단축키 f1
+
+fuzzy search : 부분검색?(ex. cls로 class 검색)
+
