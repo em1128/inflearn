@@ -1,0 +1,9 @@
+arguments라는 변수에 함수의 인자가 암묵적으로 들어간다.
+그리고 arguments를 배열처럼 사용할 수 있다.
+ex) arguments.length
+
+비슷하게 함수이름을 변수처럼 쓰면
+이것 또한 배열처럼 쓸 수 있고, 함수가 명시한 인자의 갯수만큼 채워진 배열이 된다.
+ex) 
+function one (arg1)
+>>>one.length : 1

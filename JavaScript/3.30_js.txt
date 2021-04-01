@@ -1,0 +1,6 @@
+window 같은 전역 객체가 존재함
+node js 에서는 global이 있음
+
+var name = 'em1128';
+alert(name); // em1128
+alert(window.name); // em1128
