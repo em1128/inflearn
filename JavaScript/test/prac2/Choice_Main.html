@@ -10,18 +10,92 @@
 </head>
 <body>
     <h1>Choice</h1>
-    <p>
-    <strong>HELLO! <br>
-        <u>WORLD!</u></strong>
-    </p>
 
-    1+1=?<br/>
+    <bg class = "background">
+
+        <div class="MainScene">
+            <legend>
+            <img src="image/choice.jpg" alt="갈림길"/>      
+            <div class="HeaderText">
+                <p>
+                    <strong>HELLO! <br>
+                        <u>WORLD!</u></strong>
+                </p>
+            </legend>
+            </div>
+        </div>
+
+
+        <div class="FirstScene">
+            <legend>
+                <img src="image/toad.jpg" alt="두꺼비"/>      
+                <p><strong>늪지대 대왕맹독두꺼비</strong></p>
+            </legend>
+        </div>
+
+
+        <div class="SecondScene">
+            <legend>
+                <img src="image/wolf.jpg" alt="늑대"/>      
+                <p><strong>깊은숲 붉은갈기 늑대</strong></p>
+            <legend>
+        
+        </div>
+
+
+        <div class="ThirdScene">
+            <legend>
+                <img src="image/shaman.jpg" alt="원시부족"/>      
+                <p><strong>황무지사막 빠삐코부족</strong></p>
+            </legend>
+        </div>
+
+
+        <div class="FourthScene">
+            <legend>
+                <img src="image/unholy.jpg" alt="저주받은 제단"/>      
+                <p><strong>저주받은 제단 <br>
+                    <u>정화율(14%)</u></strong></p>
+            </legend>
+        </div>
+
+
+        <div class="FourthScene2">
+            <legend>
+                <img src="image/holy.jpg" alt="정화된 제단"/>      
+                <p><strong>정화된 제단<br>
+                    <u>정화율(100%)</u></strong></p>
+            </legend>
+        </div>
+
+
+        <div class="FifthScene">
+            <legend>
+                <img src="image/forgatten.jpg" alt="잊혀진 땅"/>      
+                <p><strong>잊혀진 땅</strong></p>
+            </legend>
+        </div>
+
+
+        <div class="LastScene">
+            <legend>
+                <img src="image/holy_war.jpg" alt="최후의 성전"/>      
+                <p><strong>최후의 성전</strong></p>
+            </legend>
+        </div>
+    </bg>
+    <p>
+        새로운 지역에서 적을 만났습니다!
+    </p>
+        어떻게 하시겠습니까?
+    <br/>
+
     <input type="button"
-        onclick='CountScene("plus")'
-        value="2"/>
+        onclick='CountScene("next")'
+        value="공격한다!"/>
     <input type="button"
-        onclick='CountScene("minus")'
-        value="3"/>
-    <div id="SceneNumber">0</div>        
+        onclick='CountScene("previous")'
+        value="도망친다!"/>
+    <!--<div id="SceneNumber">0</div>  -->
 </body>
 </html>

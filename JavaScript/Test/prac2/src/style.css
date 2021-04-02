@@ -1,0 +1,29 @@
+img {
+    align-items: center;
+
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.MainScene {
+    display: flex;
+}
+.MainScene.active {
+    display: none;
+}
+.FirstScene ,.SecondScene, .ThirdScene, .FourthScene, .FourthScene, .FourthScene2, .FifthScene, .LastScene {
+    display: none;
+}
+.FirstScene.active ,.SecondScene.active, .ThirdScene.active, .FourthScene.active, .FourthScene.active,
+ .FourthScene2.active, .FifthScene.active, .LastScene.active{
+    display:flex;
+}
+
+@media screen 
+{
+
+}
+
