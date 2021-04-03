@@ -1,0 +1,16 @@
+this 가까운 데에 있는 것을 지시
+class에서 this를 넣으면
+object를 만들었을 때 해당하는 object를 가리킴
+Func(){
+	funcThis = this;
+}
+	var o1 = Func(); // this : window 함수 안에서는 함수 자체
+	var o2 = new Func(); // this : o2 오브젝트 안에서는 해당 객체
+
+함수 리터럴
+var sum = new Function('x','y','return x+y;');
+마지막에 등장하는 인자가 함수 본문이 됨.
+	
+객체 리터럴, 배열 리터럴...
+
+

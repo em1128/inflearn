@@ -8,19 +8,34 @@ img {
     position: relative;
 }
 
-.MainScene {
+
+.TitleScene {
     display: flex;
 }
-.MainScene.active {
+.TitleScene.active {
     display: none;
 }
-.FirstScene ,.SecondScene, .ThirdScene, .FourthScene, .FourthScene, .FourthScene2, .FifthScene, .LastScene {
+.FirstScene ,.SecondScene, .ThirdScene, .FourthScene__bef, .FourthScene__aft, 
+ .FifthScene, .LastScene, .ClearScene {
     display: none;
 }
-.FirstScene.active ,.SecondScene.active, .ThirdScene.active, .FourthScene.active, .FourthScene.active,
- .FourthScene2.active, .FifthScene.active, .LastScene.active{
+.FirstScene.active ,.SecondScene.active, .ThirdScene.active, .FourthScene__bef.active,
+ .FourthScene__aft.active, .FifthScene.active, .LastScene.active, .ClearScene.active{
     display:flex;
 }
+
+text{
+    font-weight: bold;
+}
+
+.Quest {
+    display: flex;
+}
+.Quest.end {
+    display: none;
+}
+
+
 
 @media screen 
 {

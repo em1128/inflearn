@@ -7,95 +7,135 @@
     <title>Choice</title>
     <link rel="stylesheet" href="src/style.css" />
     <script src="src/index.js" defer></script>
+
+    <audio id="ef__fanfare" autoplay>
+        <source src="music/fanfare.mp3">
+    </audio>
+    <audio id="ef__magic" autoplay>
+        <source src="music/magic.mp3">
+    </audio>
+    <audio id="bgm__jungle" autoplay>
+        <source src="music/jungle.mp3">
+    </audio>
+    <audio id="bgm__boss" autoplay>
+        <source src="music/boss.mp3">
+    </audio>
 </head>
 <body>
     <h1>Choice</h1>
-
+    
     <bg class = "background">
 
-        <div class="MainScene">
+        <div class="TitleScene">
             <legend>
             <img src="image/choice.jpg" alt="갈림길"/>      
-            <div class="HeaderText">
+            <text class="SubText">
                 <p>
-                    <strong>HELLO! <br>
-                        <u>WORLD!</u></strong>
+                    HELLO! <br>
+                        <u>WORLD!</u>
                 </p>
+            </text>
             </legend>
-            </div>
         </div>
-
 
         <div class="FirstScene">
             <legend>
                 <img src="image/toad.jpg" alt="두꺼비"/>      
-                <p><strong>늪지대 대왕맹독두꺼비</strong></p>
+                <p>
+                    <text class="FirstText">늪지대 대왕맹독두꺼비</text>
+                </p>
             </legend>
         </div>
-
 
         <div class="SecondScene">
             <legend>
                 <img src="image/wolf.jpg" alt="늑대"/>      
-                <p><strong>깊은숲 붉은갈기 늑대</strong></p>
+                <p>
+                    <text class="SecondText">깊은숲 붉은갈기 늑대</text>
+                </p>
             <legend>
         
         </div>
 
-
         <div class="ThirdScene">
             <legend>
                 <img src="image/shaman.jpg" alt="원시부족"/>      
-                <p><strong>황무지사막 빠삐코부족</strong></p>
+                <p>
+                    <text class="ThirdText">황무지사막 빠삐코부족</text>
+                </p>
             </legend>
         </div>
 
-
-        <div class="FourthScene">
+        <div class="FourthScene__bef">
             <legend>
                 <img src="image/unholy.jpg" alt="저주받은 제단"/>      
-                <p><strong>저주받은 제단 <br>
-                    <u>정화율(14%)</u></strong></p>
+                <p>
+                    <text class="FourthText_bef">
+                        저주받은 제단 <br>
+                    <u>정화율(14%)</u></text>
+                </p>
             </legend>
         </div>
 
-
-        <div class="FourthScene2">
+        <div class="FourthScene__aft">
             <legend>
                 <img src="image/holy.jpg" alt="정화된 제단"/>      
-                <p><strong>정화된 제단<br>
-                    <u>정화율(100%)</u></strong></p>
+                <p>
+                    <text class="FourthText_aft">
+                        정화된 제단<br>
+                    <u>정화율(100%)</u></text>
+                </p>
             </legend>
         </div>
-
 
         <div class="FifthScene">
             <legend>
                 <img src="image/forgatten.jpg" alt="잊혀진 땅"/>      
-                <p><strong>잊혀진 땅</strong></p>
+                <p>
+                    <text class="FifthText">잊혀진 땅</text>
+                
+                </p>
             </legend>
         </div>
-
 
         <div class="LastScene">
             <legend>
                 <img src="image/holy_war.jpg" alt="최후의 성전"/>      
-                <p><strong>최후의 성전</strong></p>
+                <p>
+                    <text class="FifthText">최후의 성전</text>
+                </p>
+            </legend>
+
+        </div>
+
+        <div class = "ClearScene">
+            <legend>   
+                <img src="image/clear.jpg" alt="게임 클리어">
+                <p>
+                    <text class="FifthText">게임 클리어!!!!</text>
+                </p>
+                <input type="button"
+                    value="다시하기(는 새로고침으로 할 수 있습니다^^)">
             </legend>
         </div>
     </bg>
-    <p>
-        새로운 지역에서 적을 만났습니다!
-    </p>
-        어떻게 하시겠습니까?
-    <br/>
 
-    <input type="button"
-        onclick='CountScene("next")'
-        value="공격한다!"/>
-    <input type="button"
-        onclick='CountScene("previous")'
-        value="도망친다!"/>
+    <div class ="Quest">
+
+        <legend>
+        <p>새로운 지역에서 적을 만났습니다!</p>
+        <p>어떻게 하시겠습니까?</p>
+
+        <input type="button"
+            onclick='CountScene("next")'
+            value="공격한다!"/>
+            
+        <input type="button"
+            onclick='CountScene("previous")'
+            value="도망친다!"/>
+        </legend>
+    </div>
+
     <!--<div id="SceneNumber">0</div>  -->
 </body>
 </html>

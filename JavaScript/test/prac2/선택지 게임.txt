@@ -13,11 +13,23 @@ LV 87 보스 : 늪지대 대왕맹독두꺼비
 
 #8 최후의 성전
 
+!이미지 축소
+!클리어 추가
+
+
 + 수정,추가 필요
-이미지 크기가 일정하지 않고, 너무 큼
+이미지 크기가 일정하지 않음
 배경음악 추가
 글자 폰트 추가
-버튼 옆에 작은 이미지(칼, 신발) 추가
-클리어 장면 추가
+버튼 옆에 아이콘(칼, 신발) 추가
 확률 추가
+
+background-image 속성 이용하기
+커서 추가
+float 속성 이용하기 (글과 글자 어울림?같은거)
+border-radius (버튼 좀 둥글게)
+button의 onclick을 js로 옮겨오기(
+	1.  ...object  .onclick = function(){  ...myScript  };
+	2.  ...object  .addEventListener("click",   ...myScript  );
+)
 
