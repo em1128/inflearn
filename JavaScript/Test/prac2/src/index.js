@@ -19,6 +19,9 @@ const efs = [document.getElementById('ef__fanfare'),
 const bgms =[document.getElementById('bgm__jungle'),
     document.getElementById('bgm__boss')
 ];
+
+bgms[0].volume = 0.2;
+bgms[1].volume = 0.2;
 /* 노래 재생 안 되는지 확인하기 위한 코드 
 let startPlayPromise = efs[0].play();
 

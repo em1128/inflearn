@@ -8,24 +8,35 @@
     <link rel="stylesheet" href="src/style.css" />
     <script src="src/index.js" defer></script>
 
-    <audio id="ef__fanfare" autoplay>
-        <source src="music/fanfare.mp3">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Black+And+White+Picture&family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+
+    <audio class="ef">
+        <audio id="ef__fanfare" >
+            <source src="music/fanfare.mp3">
+        </audio>
+        <audio id="ef__magic" >
+            <source src="music/magic.mp3">
+        </audio>
     </audio>
-    <audio id="ef__magic" autoplay>
-        <source src="music/magic.mp3">
+    
+    <audio class="bgm">
+        <audio id="bgm__jungle" >
+            <source src="music/jungle.mp3">
+        </audio>
+        <audio id="bgm__boss" >
+            <source src="music/boss.mp3">
+        </audio>
     </audio>
-    <audio id="bgm__jungle" autoplay>
-        <source src="music/jungle.mp3">
-    </audio>
-    <audio id="bgm__boss" autoplay>
-        <source src="music/boss.mp3">
-    </audio>
+
 </head>
 <body>
     <h1>Choice</h1>
     
     <bg class = "background">
+        
 
+        
         <div class="TitleScene">
             <legend>
             <img src="image/choice.jpg" alt="갈림길"/>      
@@ -49,7 +60,7 @@
 
         <div class="SecondScene">
             <legend>
-                <img src="image/wolf.jpg" alt="늑대"/>      
+                <img src="image/wolf_640x427.jpg" alt="늑대"/>      
                 <p>
                     <text class="SecondText">깊은숲 붉은갈기 늑대</text>
                 </p>
@@ -59,7 +70,7 @@
 
         <div class="ThirdScene">
             <legend>
-                <img src="image/shaman.jpg" alt="원시부족"/>      
+                <img src="image/shaman_640x427.jpg" alt="원시부족"/>      
                 <p>
                     <text class="ThirdText">황무지사막 빠삐코부족</text>
                 </p>
@@ -68,7 +79,7 @@
 
         <div class="FourthScene__bef">
             <legend>
-                <img src="image/unholy.jpg" alt="저주받은 제단"/>      
+                <img src="image/unholy_640x427.jpg" alt="저주받은 제단"/>      
                 <p>
                     <text class="FourthText_bef">
                         저주받은 제단 <br>
@@ -79,7 +90,7 @@
 
         <div class="FourthScene__aft">
             <legend>
-                <img src="image/holy.jpg" alt="정화된 제단"/>      
+                <img src="image/holy_640x427.jpg" alt="정화된 제단"/>      
                 <p>
                     <text class="FourthText_aft">
                         정화된 제단<br>

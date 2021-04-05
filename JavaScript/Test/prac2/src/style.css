@@ -7,8 +7,17 @@ img {
     padding: 0;
     position: relative;
 }
+.background {
+    width: 720px;
+    height: 405px;
+}
 
-
+input {
+    cursor: pointer;
+    border-style: groove;
+    border-radius: 6px;
+    padding: 5px;
+}
 .TitleScene {
     display: flex;
 }
@@ -26,10 +35,14 @@ img {
 
 text{
     font-weight: bold;
+    font-size: 25px;
 }
 
 .Quest {
     display: flex;
+    font-family: 'Black And White Picture', sans-serif;
+    font-size: 20px;
+    
 }
 .Quest.end {
     display: none;
