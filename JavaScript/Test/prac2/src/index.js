@@ -1,4 +1,5 @@
 //const sceneNum = document.getElementById("SceneNumber");
+
 var sceneNum = 0;
 const clearSceneNum = 8;
 const bossSceneNum = 7;
@@ -43,7 +44,7 @@ function CountScene(type) {
     //결과를 표시할 element
     //현재 화면에 표시된 값
     //let number = sceneNum.innerText;
-    let number  = sceneNum;
+    let number  = Scene.sceneNum;
     
 
 

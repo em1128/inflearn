@@ -1,3 +1,20 @@
+@font-face {
+    font-family: "jua";
+    src: url("../font/BMJUA_ttf.ttf");
+}
+text{
+    font-family: 'Black And White Picture', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.Quest {
+    display: flex;
+    font-family: "jua";
+    font-size: 20px;
+    
+}
+
 img {
     align-items: center;
 
@@ -33,17 +50,8 @@ input {
     display:flex;
 }
 
-text{
-    font-weight: bold;
-    font-size: 25px;
-}
 
-.Quest {
-    display: flex;
-    font-family: 'Black And White Picture', sans-serif;
-    font-size: 20px;
-    
-}
+
 .Quest.end {
     display: none;
 }
