@@ -5,6 +5,7 @@ function Character (hp, atk, level) {
 }
 
 var myPokemon=[];
+var monDex=[];
 var pokeNum = 0;
 
 function Monster (hp, atk, level, catchPercent) {
@@ -27,11 +28,13 @@ function Monster (hp, atk, level, catchPercent) {
     
             if(Math.random()*100<=this.catchPercent){
                 console.log(" 포획 성공!");
+                alert(" 포획 성공!");
                 myPokemon[pokeNum] = this;
                 pokeNum++;
             }
             else{
                 console.log(" 포획 실패!");
+                alert(" 포획 실패!");
             }
     }
 }
@@ -40,8 +43,30 @@ function Monster (hp, atk, level, catchPercent) {
 
 function NewMonster(stage){
     var randomLevel = Math.random()*10;
-    randomLevel = Math.floor(randomLevel);
-    let chico = new Monster(4*randomLevel,2*randomLevel,randomLevel,50);
-    let norin = new Monster(3*randomLevel,5*randomLevel,randomLevel,40);
-    monDex=[chico, norin];
+    randomLevel = Math.floor(randomLevel) + 1;
+    switch(stage){
+        case 1:
+            let chico = new Monster(4*randomLevel,2*randomLevel,randomLevel,50);
+            monDex[0] = chico;
+            alert(
+                "HP : " + chico.hp + "\n" +
+                "ATK : " + chico.atk + "\n" +
+                "LV : " + chico.level + "\n");
+            break;
+        case 2:
+            let rita = new Monster(3*randomLevel,5*randomLevel,randomLevel,40);
+            monDex[1] = rita;
+            alert(
+                "HP : " + rita.hp + "\n" +
+                "ATK : " + rita.atk + "\n" +
+                "LV : " + rita.level + "\n");
+            break;
+        default:
+            alert("ERROR : stage not exist!");
+
+        
+    
+    }
+   
+    
 }
