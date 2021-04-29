@@ -20,10 +20,8 @@ public class t4 {
         int answer = 0;
         int[] trashGarbage = new int[moves.length]; 
         int k =0;
-        
         for (int i = 0; i < moves.length; i++) {
-
-        for (int j = 0; j < board.length; j++) { 
+            for (int j = 0; j < board.length; j++) { 
                 if(board[j][moves[i]-1]!=0){
                     System.out.printf("%d %d %d gotoGarbage %d\n",i,j,k,board[j][moves[i]-1]);
                     trashGarbage[k] = board[j][moves[i]-1];
@@ -40,8 +38,6 @@ public class t4 {
                 answer+=2;
             }
         }
-        
-
         return answer;
     }
 

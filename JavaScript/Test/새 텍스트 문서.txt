@@ -1,0 +1,3 @@
+DRY = don't repeat yourself! >> 반복을 줄여라
+KISS = keep it simple, stupid!  >> 단순하게, 한가지 일만 하는 코드 위주로 작동
+YAGNI = you ain't gonna need it 
